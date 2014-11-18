@@ -1,0 +1,50 @@
+/* Polaroid class */
+ul.polaroid img {
+	list-style-type: none;
+	border: 10px solid #fff;
+	border-bottom: 45px solid #fff;
+	text-align: center;
+	-webkit-box-shadow: 3px 3px 3px #777;
+	-moz-box-shadow: 3px 3px 3px #777;
+	box-shadow: 3px 3px 3px #777;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	}
+
+ul.polaroid li {
+	list-style-type: none;
+	text-align: center;
+	align-content: center;
+	}
+
+/* "random" tilting of images */
+ul.polaroid li:nth-child(even) img {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+}
+ 
+ul.polaroid li:nth-child(3n) img {
+  -webkit-transform: none;
+  -moz-transform: none;
+  position: relative;
+  top: -5px;
+}
+ 
+ul.polaroid li:nth-child(5n) img {
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	position: relative;
+	right: 5px;
+}
+ 
+ul.polaroid li:nth-child(8n) img {
+	position: relative;
+	top: 8px;
+	right: 5px;
+}
+ 
+ul.polaroid li:nth-child(11n) img {
+	position: relative;
+	top: 3px;
+	left: -5px;
+}
